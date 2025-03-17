@@ -14,6 +14,22 @@ x-typebot-common: &typebot-common
     REDIS_URL: redis://typebot-redis:6379
 
 services:
+  caddy-gen:
+    container_name: caddy-gen
+    image: wemakeservices/caddy-gen:latest
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ${PWD}/.typebot/caddy-certificates:/data/caddy
+    ports:
+      - '80:80'
+      - '443:443'
+    networks:
+      - typebot-network
+    depends_on:
+      - typebot-builder
+      - typebot-viewer
+
   typebot-db:
     image: postgres:16
     restart: always
@@ -27,6 +43,8 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
+    networks:
+      - typebot-network
 
   typebot-redis:
     image: redis:alpine
@@ -49,16 +67,16 @@ services:
       context: .
       args:
         - SCOPE=builder
-    ports:
-      - '8080:3000'
-    extra_hosts:
-      - 'host.docker.internal:host-gateway'
+    labels:
+      virtual.host: 'testchat.sltechsoft.com'
+      virtual.port: '3000'
+      virtual.tls-email: 'admin@sltechsoft.com'
+    networks:
+      - typebot-network
     deploy:
       resources:
         limits:
           memory: 8g
-        reservations:
-          memory: 4g
 
   typebot-viewer:
     <<: *typebot-common
@@ -66,30 +84,37 @@ services:
       context: .
       args:
         - SCOPE=viewer
-    ports:
-      - '8081:3000'
+    labels:
+      virtual.host: 'testbot.sltechsoft.com'
+      virtual.port: '3000'
+      virtual.tls-email: 'admin@sltechsoft.com'
+      virtual.proxy.directives: |
+        flush_interval -1
+    networks:
+      - typebot-network
     deploy:
       resources:
         limits:
           memory: 8g
-        reservations:
-          memory: 4g
 
-  # Include MinIO if you need file storage
   minio:
     image: minio/minio
-    command: server /data --console-address ":9001"
+    command: server /data
     ports:
       - '9000:9000'
-      - '9001:9001'
     environment:
       MINIO_ROOT_USER: minio
       MINIO_ROOT_PASSWORD: minio123
+    networks:
+      - typebot-network
     volumes:
-      - s3_data:/data
+      - s3-data:/data
 
+  # This service just makes sure a bucket with the right policies is created
   createbuckets:
     image: minio/mc
+    networks:
+      - typebot-network
     depends_on:
       - minio
     entrypoint: >
@@ -108,4 +133,5 @@ networks:
 volumes:
   db-data:
   redis-data:
-  s3_data:
+  s3-data:
+

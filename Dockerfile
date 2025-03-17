@@ -102,6 +102,9 @@ RUN SKIP_ENV_CHECK=true bunx turbo build --filter="${SCOPE}..."
 FROM bun AS release
 ARG SCOPE
 ENV SCOPE=${SCOPE}
+# Create the required user and group
+RUN groupadd -g 1001 nodejs && \
+    useradd -u 1001 -g nodejs -m nextjs
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/packages/prisma/postgresql ./packages/prisma/postgresql
 COPY --from=builder --chown=node:node /app/apps/${SCOPE}/.next/standalone ./
