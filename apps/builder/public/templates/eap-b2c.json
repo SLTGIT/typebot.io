@@ -1,0 +1,1111 @@
+{
+  "version": "6.1",
+  "id": "cm8cn4hqm0009eli5u8yr1i1e",
+  "name": "Real Estate(B2C)",
+  "events": [
+    {
+      "id": "lasdceyfzpyui2mz44att5o9",
+      "outgoingEdgeId": "vfut18icozlvc0qpn430pqn6",
+      "graphCoordinates": {
+        "x": 0,
+        "y": 0
+      },
+      "type": "start"
+    }
+  ],
+  "groups": [
+    {
+      "id": "cwez20p7e2f74kjl788f1xsi",
+      "title": "Group #1",
+      "graphCoordinates": {
+        "x": 293,
+        "y": -9
+      },
+      "blocks": [
+        {
+          "id": "opgzp85qqexouv4l13oiimdb",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Hello! Welcome to Easy Agent Pro. Are you looking for properties to buy, rent, or invest in?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ckwp7zun1ipohye55ywzvgsu",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "g07a34ziiw3k447fg5pw9iir",
+              "outgoingEdgeId": "ei1cxb42cqvajt2ymkdme16b",
+              "content": "Buy"
+            },
+            {
+              "id": "qxxxnzd9ruw5oz8pmgj22k62",
+              "outgoingEdgeId": "yzonf0yvau4ix5ns0p8hrtpa",
+              "content": "Rent"
+            },
+            {
+              "id": "sjjjqqy7piqyn22dqiwj0rhp",
+              "outgoingEdgeId": "xzlkspm17ecpkuukgn4uqsne",
+              "content": "Invest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "n5jehtsre5e609ire05t4u6c",
+      "title": "Group #2",
+      "graphCoordinates": {
+        "x": 685,
+        "y": 65
+      },
+      "blocks": [
+        {
+          "id": "r0x0060w92hnurtdgndgtp2m",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Great! Let’s find the perfect property for you. Can you provide some details?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "jdchq21dg16u8slhttp2yx0f",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Which city or location are you interested in?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "nsiwyp94geleciiyu21nc25z",
+          "outgoingEdgeId": "hsi255x0jfm4ojcr0fzktixp",
+          "type": "text input",
+          "options": {
+            "variableId": "vh9r6daq6k5kbhqag7pu5yens"
+          }
+        }
+      ]
+    },
+    {
+      "id": "v1q5e1db8u5iyz6dk19hglm7",
+      "title": "Group #3",
+      "graphCoordinates": {
+        "x": 1090,
+        "y": 89
+      },
+      "blocks": [
+        {
+          "id": "n0xuzkztkb0hktwm3mwz19s9",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "What type of property are you looking for?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "fl7gbs8fpfkdp9wjyrslllxs",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "ajlnwjgg5k4m1quijcrgg4nt",
+              "outgoingEdgeId": "cu7f3qhff6afq5z9e9k1d7qn",
+              "content": "Apartment"
+            },
+            {
+              "id": "bakkxmkee5jwps6i4iehx37z",
+              "outgoingEdgeId": "hot6c6eq45wm5exfrw381s3z",
+              "content": "House"
+            },
+            {
+              "id": "ex5w8zadtl1238zr75osj3x3",
+              "outgoingEdgeId": "voevirnkga4912puchmc8ezn",
+              "content": "Villa"
+            },
+            {
+              "id": "y7eabu9afn40hugeex0kb0u1",
+              "outgoingEdgeId": "uc271cu0jqixed1jpk9nw754",
+              "content": "Commercial Space"
+            },
+            {
+              "id": "rkptx83zy5e8ge2qahplc93w",
+              "outgoingEdgeId": "vcwionoo74b952eh31kz7ngr",
+              "content": "More"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pc2dhe1gkejpsfe28ayh4lh5",
+      "title": "Group #4",
+      "graphCoordinates": {
+        "x": 1454,
+        "y": 598
+      },
+      "blocks": [
+        {
+          "id": "doz6hmbo9kirkomjvo6gozbl",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Please tell us what type of property you are looking for?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "d66det5hfcq0o5flszr0c8gu",
+          "outgoingEdgeId": "l84nrc0ef4j5nia209uqu3fx",
+          "type": "text input",
+          "options": {
+            "variableId": "vw094ggdfrlv6d9dgklp5t8uu"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sizpbibljfi8y9kxccx0v40t",
+      "title": "Group #5",
+      "graphCoordinates": {
+        "x": 1826,
+        "y": 147
+      },
+      "blocks": [
+        {
+          "id": "noi9au0qvn4vl94g3pw9hqv1",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "What is your budget range?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "wzik7xm29bu195lgfmiyt24q",
+          "outgoingEdgeId": "merbzxnqpw32lvkxm4y6rqfy",
+          "type": "text input",
+          "options": {
+            "variableId": "vv3qf12e93hsxipzej5w8zgrb"
+          }
+        }
+      ]
+    },
+    {
+      "id": "jq5rgfdki9pqybxq6gchowwc",
+      "title": "Group #6",
+      "graphCoordinates": {
+        "x": 2282,
+        "y": 138
+      },
+      "blocks": [
+        {
+          "id": "bqibwqr3gdylvbobphvhx124",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Do you have any specific requirements?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "k86631jphabn3yd8smv33e3i",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "wcg3yrnpnsw75ugrha6flbxw",
+              "outgoingEdgeId": "migy7k8bd4rttqpm500hz4z1",
+              "content": "Bedrooms"
+            },
+            {
+              "id": "e972ixghe0yfgllt6op2xf07",
+              "outgoingEdgeId": "cj4sgoqsqc2s3zzc1yldyeiz",
+              "content": "Amenities"
+            },
+            {
+              "id": "ypk9z9o6sfp2zlag3d8uam7o",
+              "outgoingEdgeId": "bgqfnnxejxyr6vo051b02c7k",
+              "content": "Parking"
+            },
+            {
+              "id": "ohllfayfubeak72ip9umsze2",
+              "outgoingEdgeId": "d9wbtn9fvxdpr9p04c0cslv1",
+              "content": "Furnished"
+            },
+            {
+              "id": "d94evxnsblih2bje9nzt6bjq",
+              "outgoingEdgeId": "m1a8ti0ejmz23sfq7qbflcvi",
+              "content": "More"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vtbf6t69v8i4alb9er1ne7ua",
+      "title": "Group #7",
+      "graphCoordinates": {
+        "x": 2699,
+        "y": 630
+      },
+      "blocks": [
+        {
+          "id": "q61iakct0ra5h7y86rda0jdi",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Please mention your requirement"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "qcydpgnq0gkene0i2xfoqr37",
+          "outgoingEdgeId": "h9t0eo8smwuvgig6hkgjh3qn",
+          "type": "text input",
+          "options": {
+            "variableId": "vme14b51w5espfociatudraxd"
+          }
+        }
+      ]
+    },
+    {
+      "id": "efg7oigtvne3awmk0o2sc3lx",
+      "title": "Group #8",
+      "graphCoordinates": {
+        "x": 3072,
+        "y": 241
+      },
+      "blocks": [
+        {
+          "id": "k8d9rlxwebqv2fnq9wet0suo",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Thank you for telling us your requirement. "
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "eguhl69poouaycpv1noavyq4",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Would you like to schedule a visit to see the property in person?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "vlx22bksm6as71aqura0w66b",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "y380iggqo4gqzkjruqlya4r8",
+              "outgoingEdgeId": "q1ns9nlvz4cdm0d3cekkn2yk",
+              "content": "Yes"
+            },
+            {
+              "id": "zv5sd84mf6nlha2i79uto07z",
+              "outgoingEdgeId": "udlafkgv0161ze1rohdbcc2v",
+              "content": "No"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jil4vcsy25oa8hkbk2hn8w88",
+      "title": "Group #9",
+      "graphCoordinates": {
+        "x": 3572,
+        "y": 197
+      },
+      "blocks": [
+        {
+          "id": "l2g8uxx7iqe0bqhbvygeie0o",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Which property would you like to visit?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "am5qz1n5xs5tkyhc9b1hrtel",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "ht1dn64kcy9rnrdgjx1vqzgt",
+              "outgoingEdgeId": "syvc9ton1hvvk3m81wtmgds6",
+              "content": "Apartment"
+            },
+            {
+              "id": "tvqmcy616mrr4e6jom0p0r22",
+              "outgoingEdgeId": "cs3efvx35ewpwj0elyy1coag",
+              "content": "House"
+            },
+            {
+              "id": "cwnx39zl2dj76edv8emtfmsr",
+              "outgoingEdgeId": "wkcugtkdfby07htlslmc182m",
+              "content": "Villa"
+            },
+            {
+              "id": "u6o3smbx011tm3cytcyehd1h",
+              "outgoingEdgeId": "c5sisopno8doqkygcq6rw3a5",
+              "content": "Commercial Space"
+            },
+            {
+              "id": "vlfxmvz0e4psj2rrmaoitce9",
+              "outgoingEdgeId": "sdz2d1bkwwaryhg3eyjxvj0w",
+              "content": "More"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jcwgg4oqax3j4puqoilo2zus",
+      "title": "Group #10",
+      "graphCoordinates": {
+        "x": 4049,
+        "y": 762
+      },
+      "blocks": [
+        {
+          "id": "hgyaut2tyqfdfxx9i312qucv",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Please let us know which property you would like to visit. "
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "yyuf2w854mgeqnijmo03kbig",
+          "outgoingEdgeId": "ois2s6nwg1s4ebekwyvltrab",
+          "type": "text input",
+          "options": {
+            "variableId": "vtrah3buztj00013gva0ofyea"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kbe9ky8ibyt8tom2e77zujxt",
+      "title": "Group #11",
+      "graphCoordinates": {
+        "x": 4222,
+        "y": 341
+      },
+      "blocks": [
+        {
+          "id": "rbgxsi8mb9yjvyjdbdbbfatk",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Which date and time work best for you. "
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "w7ooex71yv9rzj51cz5yui5y",
+          "outgoingEdgeId": "e0q7bixv0inuw96nulhya41d",
+          "type": "text input",
+          "options": {
+            "variableId": "vcy35etvp0safmz7fhzlpu6vd"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wxdqln9g545rhinuvqqpvfyq",
+      "title": "Group #12",
+      "graphCoordinates": {
+        "x": 4740,
+        "y": 347
+      },
+      "blocks": [
+        {
+          "id": "yjlef5fx25ymhazf1tyuy63u",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Would you like to meet the agent at the property or prefer a pickup?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "x5ueirp5px23mnoclqyite5u",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "awi4k8txryob9orqzhf6d831",
+              "outgoingEdgeId": "hp1heooak95aymzankdd6np1",
+              "content": "At the property"
+            },
+            {
+              "id": "v77qrtoqdtz1e7m1tqang1va",
+              "outgoingEdgeId": "bsrpjgcnt402fys0bcglas7p",
+              "content": "Prefer a pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "x6prho7poeq4580ch8dfj5wc",
+      "title": "Group #13",
+      "graphCoordinates": {
+        "x": 5250,
+        "y": 453
+      },
+      "blocks": [
+        {
+          "id": "ody4sdskuphllarw7qrh5jc5",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "To assist you better, could you please provide your name and contact details?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "b9qyusw9rp42e9hmcnexswm7",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Please tell us your name. "
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "kteq63w3pag6am5zx72yawg8",
+          "type": "text input",
+          "options": {
+            "variableId": "vrnm3u2untfs0n2vfsny1pu1n"
+          }
+        },
+        {
+          "id": "alexdi3ojuxzwb3f8thy2hmw",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Please share your phone number"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "fmxs9gi9ihh08ve2fu4t8wv7",
+          "type": "number input",
+          "options": {
+            "variableId": "vtm7yuh9lof7uu3wzimqq2j5p"
+          }
+        },
+        {
+          "id": "ctnixm9a8bjxn2crdwow53gu",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Please share your Email"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "i5rgicu2f9n8kzcscfaghwds",
+          "outgoingEdgeId": "ziek3hngwi5od2umw0scx1ja",
+          "type": "email input",
+          "options": {
+            "variableId": "vtq7kwhhgthc4b870ueunrsxx"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ez8078r3wx1opbiad5292hnm",
+      "title": "Group #14",
+      "graphCoordinates": {
+        "x": 5686.833333333332,
+        "y": 862.0833333333337
+      },
+      "blocks": [
+        {
+          "id": "xbzvj749dwmg5kyagyl9322x",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Would you like to speak with a real estate expert for more details?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "k8rs158hxrp5mpfgz5fh2doi",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "u7dgdlxsgbxbcd272iij6kws",
+              "outgoingEdgeId": "nyxbic0jeav1bz5zqw3anmeg",
+              "content": "Yes, connect me with an agent"
+            },
+            {
+              "id": "vx365xlrg3zn9lba3okgo41k",
+              "outgoingEdgeId": "ovbinzkssdr9htj0tczy87z7",
+              "content": "No, I will decide later"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sw1641emj6lzcovps36nfc9m",
+      "title": "Group #15",
+      "graphCoordinates": {
+        "x": 3959.33,
+        "y": 157.08
+      },
+      "blocks": [
+        {
+          "id": "v294bp02i7cmi7w8gmhc82b8",
+          "type": "Jump",
+          "options": {
+            "groupId": "ez8078r3wx1opbiad5292hnm"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gkgbrdwvckhtv8lzlpckv655",
+      "title": "Group #16",
+      "graphCoordinates": {
+        "x": 6244.333333333332,
+        "y": 789.5833333333337
+      },
+      "blocks": [
+        {
+          "id": "x1b9vd8tzp6qhv8awnqut2di",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Reach out to *********** /// Using calendly to schedule. "
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "arjpctp3ypdz5m82vxnxztch",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Thank you for using Easy Agent Pro! We hope you find your dream property soon. "
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "vfut18icozlvc0qpn430pqn6",
+      "from": {
+        "eventId": "lasdceyfzpyui2mz44att5o9"
+      },
+      "to": {
+        "groupId": "cwez20p7e2f74kjl788f1xsi"
+      }
+    },
+    {
+      "id": "ei1cxb42cqvajt2ymkdme16b",
+      "from": {
+        "blockId": "ckwp7zun1ipohye55ywzvgsu",
+        "itemId": "g07a34ziiw3k447fg5pw9iir"
+      },
+      "to": {
+        "groupId": "n5jehtsre5e609ire05t4u6c"
+      }
+    },
+    {
+      "id": "yzonf0yvau4ix5ns0p8hrtpa",
+      "from": {
+        "blockId": "ckwp7zun1ipohye55ywzvgsu",
+        "itemId": "qxxxnzd9ruw5oz8pmgj22k62"
+      },
+      "to": {
+        "groupId": "n5jehtsre5e609ire05t4u6c"
+      }
+    },
+    {
+      "id": "xzlkspm17ecpkuukgn4uqsne",
+      "from": {
+        "blockId": "ckwp7zun1ipohye55ywzvgsu",
+        "itemId": "sjjjqqy7piqyn22dqiwj0rhp"
+      },
+      "to": {
+        "groupId": "n5jehtsre5e609ire05t4u6c",
+        "blockId": "r0x0060w92hnurtdgndgtp2m"
+      }
+    },
+    {
+      "id": "hsi255x0jfm4ojcr0fzktixp",
+      "from": {
+        "blockId": "nsiwyp94geleciiyu21nc25z"
+      },
+      "to": {
+        "groupId": "v1q5e1db8u5iyz6dk19hglm7"
+      }
+    },
+    {
+      "id": "vcwionoo74b952eh31kz7ngr",
+      "from": {
+        "blockId": "fl7gbs8fpfkdp9wjyrslllxs",
+        "itemId": "rkptx83zy5e8ge2qahplc93w"
+      },
+      "to": {
+        "groupId": "pc2dhe1gkejpsfe28ayh4lh5"
+      }
+    },
+    {
+      "id": "l84nrc0ef4j5nia209uqu3fx",
+      "from": {
+        "blockId": "d66det5hfcq0o5flszr0c8gu"
+      },
+      "to": {
+        "groupId": "sizpbibljfi8y9kxccx0v40t"
+      }
+    },
+    {
+      "id": "cu7f3qhff6afq5z9e9k1d7qn",
+      "from": {
+        "blockId": "fl7gbs8fpfkdp9wjyrslllxs",
+        "itemId": "ajlnwjgg5k4m1quijcrgg4nt"
+      },
+      "to": {
+        "groupId": "sizpbibljfi8y9kxccx0v40t"
+      }
+    },
+    {
+      "id": "hot6c6eq45wm5exfrw381s3z",
+      "from": {
+        "blockId": "fl7gbs8fpfkdp9wjyrslllxs",
+        "itemId": "bakkxmkee5jwps6i4iehx37z"
+      },
+      "to": {
+        "groupId": "sizpbibljfi8y9kxccx0v40t"
+      }
+    },
+    {
+      "id": "voevirnkga4912puchmc8ezn",
+      "from": {
+        "blockId": "fl7gbs8fpfkdp9wjyrslllxs",
+        "itemId": "ex5w8zadtl1238zr75osj3x3"
+      },
+      "to": {
+        "groupId": "sizpbibljfi8y9kxccx0v40t"
+      }
+    },
+    {
+      "id": "uc271cu0jqixed1jpk9nw754",
+      "from": {
+        "blockId": "fl7gbs8fpfkdp9wjyrslllxs",
+        "itemId": "y7eabu9afn40hugeex0kb0u1"
+      },
+      "to": {
+        "groupId": "sizpbibljfi8y9kxccx0v40t"
+      }
+    },
+    {
+      "id": "merbzxnqpw32lvkxm4y6rqfy",
+      "from": {
+        "blockId": "wzik7xm29bu195lgfmiyt24q"
+      },
+      "to": {
+        "groupId": "jq5rgfdki9pqybxq6gchowwc"
+      }
+    },
+    {
+      "id": "m1a8ti0ejmz23sfq7qbflcvi",
+      "from": {
+        "blockId": "k86631jphabn3yd8smv33e3i",
+        "itemId": "d94evxnsblih2bje9nzt6bjq"
+      },
+      "to": {
+        "groupId": "vtbf6t69v8i4alb9er1ne7ua"
+      }
+    },
+    {
+      "id": "h9t0eo8smwuvgig6hkgjh3qn",
+      "from": {
+        "blockId": "qcydpgnq0gkene0i2xfoqr37"
+      },
+      "to": {
+        "groupId": "efg7oigtvne3awmk0o2sc3lx"
+      }
+    },
+    {
+      "id": "migy7k8bd4rttqpm500hz4z1",
+      "from": {
+        "blockId": "k86631jphabn3yd8smv33e3i",
+        "itemId": "wcg3yrnpnsw75ugrha6flbxw"
+      },
+      "to": {
+        "groupId": "efg7oigtvne3awmk0o2sc3lx"
+      }
+    },
+    {
+      "id": "cj4sgoqsqc2s3zzc1yldyeiz",
+      "from": {
+        "blockId": "k86631jphabn3yd8smv33e3i",
+        "itemId": "e972ixghe0yfgllt6op2xf07"
+      },
+      "to": {
+        "groupId": "efg7oigtvne3awmk0o2sc3lx"
+      }
+    },
+    {
+      "id": "bgqfnnxejxyr6vo051b02c7k",
+      "from": {
+        "blockId": "k86631jphabn3yd8smv33e3i",
+        "itemId": "ypk9z9o6sfp2zlag3d8uam7o"
+      },
+      "to": {
+        "groupId": "efg7oigtvne3awmk0o2sc3lx"
+      }
+    },
+    {
+      "id": "d9wbtn9fvxdpr9p04c0cslv1",
+      "from": {
+        "blockId": "k86631jphabn3yd8smv33e3i",
+        "itemId": "ohllfayfubeak72ip9umsze2"
+      },
+      "to": {
+        "groupId": "efg7oigtvne3awmk0o2sc3lx"
+      }
+    },
+    {
+      "id": "q1ns9nlvz4cdm0d3cekkn2yk",
+      "from": {
+        "blockId": "vlx22bksm6as71aqura0w66b",
+        "itemId": "y380iggqo4gqzkjruqlya4r8"
+      },
+      "to": {
+        "groupId": "jil4vcsy25oa8hkbk2hn8w88"
+      }
+    },
+    {
+      "id": "udlafkgv0161ze1rohdbcc2v",
+      "from": {
+        "blockId": "vlx22bksm6as71aqura0w66b",
+        "itemId": "zv5sd84mf6nlha2i79uto07z"
+      },
+      "to": {
+        "groupId": "jil4vcsy25oa8hkbk2hn8w88",
+        "blockId": "am5qz1n5xs5tkyhc9b1hrtel"
+      }
+    },
+    {
+      "id": "sdz2d1bkwwaryhg3eyjxvj0w",
+      "from": {
+        "blockId": "am5qz1n5xs5tkyhc9b1hrtel",
+        "itemId": "vlfxmvz0e4psj2rrmaoitce9"
+      },
+      "to": {
+        "groupId": "jcwgg4oqax3j4puqoilo2zus"
+      }
+    },
+    {
+      "id": "ois2s6nwg1s4ebekwyvltrab",
+      "from": {
+        "blockId": "yyuf2w854mgeqnijmo03kbig"
+      },
+      "to": {
+        "groupId": "kbe9ky8ibyt8tom2e77zujxt"
+      }
+    },
+    {
+      "id": "syvc9ton1hvvk3m81wtmgds6",
+      "from": {
+        "blockId": "am5qz1n5xs5tkyhc9b1hrtel",
+        "itemId": "ht1dn64kcy9rnrdgjx1vqzgt"
+      },
+      "to": {
+        "groupId": "kbe9ky8ibyt8tom2e77zujxt"
+      }
+    },
+    {
+      "id": "wkcugtkdfby07htlslmc182m",
+      "from": {
+        "blockId": "am5qz1n5xs5tkyhc9b1hrtel",
+        "itemId": "cwnx39zl2dj76edv8emtfmsr"
+      },
+      "to": {
+        "groupId": "kbe9ky8ibyt8tom2e77zujxt"
+      }
+    },
+    {
+      "id": "c5sisopno8doqkygcq6rw3a5",
+      "from": {
+        "blockId": "am5qz1n5xs5tkyhc9b1hrtel",
+        "itemId": "u6o3smbx011tm3cytcyehd1h"
+      },
+      "to": {
+        "groupId": "kbe9ky8ibyt8tom2e77zujxt"
+      }
+    },
+    {
+      "id": "e0q7bixv0inuw96nulhya41d",
+      "from": {
+        "blockId": "w7ooex71yv9rzj51cz5yui5y"
+      },
+      "to": {
+        "groupId": "wxdqln9g545rhinuvqqpvfyq"
+      }
+    },
+    {
+      "id": "hp1heooak95aymzankdd6np1",
+      "from": {
+        "blockId": "x5ueirp5px23mnoclqyite5u",
+        "itemId": "awi4k8txryob9orqzhf6d831"
+      },
+      "to": {
+        "groupId": "x6prho7poeq4580ch8dfj5wc"
+      }
+    },
+    {
+      "id": "bsrpjgcnt402fys0bcglas7p",
+      "from": {
+        "blockId": "x5ueirp5px23mnoclqyite5u",
+        "itemId": "v77qrtoqdtz1e7m1tqang1va"
+      },
+      "to": {
+        "groupId": "x6prho7poeq4580ch8dfj5wc"
+      }
+    },
+    {
+      "id": "ziek3hngwi5od2umw0scx1ja",
+      "from": {
+        "blockId": "i5rgicu2f9n8kzcscfaghwds"
+      },
+      "to": {
+        "groupId": "ez8078r3wx1opbiad5292hnm"
+      }
+    },
+    {
+      "id": "cs3efvx35ewpwj0elyy1coag",
+      "from": {
+        "blockId": "am5qz1n5xs5tkyhc9b1hrtel",
+        "itemId": "tvqmcy616mrr4e6jom0p0r22"
+      },
+      "to": {
+        "groupId": "sw1641emj6lzcovps36nfc9m"
+      }
+    },
+    {
+      "id": "nyxbic0jeav1bz5zqw3anmeg",
+      "from": {
+        "blockId": "k8rs158hxrp5mpfgz5fh2doi",
+        "itemId": "u7dgdlxsgbxbcd272iij6kws"
+      },
+      "to": {
+        "groupId": "gkgbrdwvckhtv8lzlpckv655"
+      }
+    },
+    {
+      "id": "ovbinzkssdr9htj0tczy87z7",
+      "from": {
+        "blockId": "k8rs158hxrp5mpfgz5fh2doi",
+        "itemId": "vx365xlrg3zn9lba3okgo41k"
+      },
+      "to": {
+        "groupId": "gkgbrdwvckhtv8lzlpckv655",
+        "blockId": "arjpctp3ypdz5m82vxnxztch"
+      }
+    }
+  ],
+  "variables": [
+    {
+      "id": "vtq7kwhhgthc4b870ueunrsxx",
+      "name": "email",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vtm7yuh9lof7uu3wzimqq2j5p",
+      "name": "number",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vrnm3u2untfs0n2vfsny1pu1n",
+      "name": "name",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vcy35etvp0safmz7fhzlpu6vd",
+      "name": "time_availability",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vtrah3buztj00013gva0ofyea",
+      "name": "req2",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vme14b51w5espfociatudraxd",
+      "name": "req",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vv3qf12e93hsxipzej5w8zgrb",
+      "name": "budget",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vw094ggdfrlv6d9dgklp5t8uu",
+      "name": "property_req",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vh9r6daq6k5kbhqag7pu5yens",
+      "name": "geo_confirmation",
+      "isSessionVariable": false
+    }
+  ],
+  "theme": {},
+  "selectedThemeTemplateId": null,
+  "settings": {},
+  "createdAt": "2025-03-17T05:45:03.694Z",
+  "updatedAt": "2025-03-21T16:14:40.531Z",
+  "icon": null,
+  "folderId": null,
+  "publicId": "real-estate-b-2-c-8yr1i1e",
+  "customDomain": null,
+  "workspaceId": "proWorkspace",
+  "resultsTablePreferences": null,
+  "isArchived": false,
+  "isClosed": false,
+  "whatsAppCredentialsId": null,
+  "riskLevel": null
+}

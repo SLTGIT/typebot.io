@@ -1,0 +1,3043 @@
+{
+  "version": "6.1",
+  "id": "cm8cl139v0007eli5acx7ciu2",
+  "name": "Real Estate(B2B)",
+  "events": [
+    {
+      "id": "kxx8zwbfq615i2mpwd4a9fjc",
+      "outgoingEdgeId": "vg39buehfkgl6yitr7kqege0",
+      "graphCoordinates": {
+        "x": 0,
+        "y": 0
+      },
+      "type": "start"
+    }
+  ],
+  "groups": [
+    {
+      "id": "lvqbj8yek0n2qn5tjmo1kb2h",
+      "title": "Intro message",
+      "graphCoordinates": {
+        "x": 306,
+        "y": -2
+      },
+      "blocks": [
+        {
+          "id": "tzv52vhbslpxyjovrfanmndp",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Hello! Welcome to Easy Agent Pro.  "
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "smolwzfaztpmyrb5waz7gwt9",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "I am Alex,Your Support Assistant."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "qw6besrro70q6jzwm55pxh83",
+          "outgoingEdgeId": "o9p2li7hfk6soiypjwhsbzqy",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "How can we help you today? "
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "l2011xqsisobt2m5dp8z8qe1",
+      "title": "Intro Question",
+      "graphCoordinates": {
+        "x": 655,
+        "y": 4
+      },
+      "blocks": [
+        {
+          "id": "kf806lhe0c1zyv2m839eu0i7",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "pxb4ehysfk6hl0xyw6l4eedd",
+              "outgoingEdgeId": "q2c707qq3lg4dfmh7vt5gmwl",
+              "content": "Lead Website for Real Estate Partners"
+            },
+            {
+              "id": "ffmwfsmcdbbd5o5v2auoomk2",
+              "content": "Marketing"
+            },
+            {
+              "id": "oh40h19n5ytrnt6obu6wrcar",
+              "outgoingEdgeId": "yado966jk8dm2v2axna9y246",
+              "content": "Schedule Consultation Call"
+            },
+            {
+              "id": "br18rrcibnr3jxiizj83d5c2",
+              "outgoingEdgeId": "wlhb6xc6bcyedgfm4n0saqua",
+              "content": "Pricing and plans"
+            },
+            {
+              "id": "yr6ved8i0782t4vr3zm0bcy7",
+              "outgoingEdgeId": "mhpeo8j68f4bgggs9ybqouzj",
+              "content": "Demo and Trial signup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i1jlcxzfr3n32b2p1byyyhmi",
+      "title": "Group #3",
+      "graphCoordinates": {
+        "x": 1007,
+        "y": 4
+      },
+      "blocks": [
+        {
+          "id": "xnsqw3vy21oi0ns7vhypyffu",
+          "type": "Jump",
+          "options": {
+            "groupId": "gkejggx43bvemz4ge15t79bn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stoc9txsxz04zap60nx9zmgd",
+      "title": "Group #4",
+      "graphCoordinates": {
+        "x": 1010,
+        "y": 158
+      },
+      "blocks": [
+        {
+          "id": "x9ssnw08pa0e37mtmgsevkbv",
+          "type": "Jump",
+          "options": {
+            "groupId": "tvbchp27dmnz3f6nfz4az7dt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gkejggx43bvemz4ge15t79bn",
+      "title": "Lead Website for Real Estate Partners",
+      "graphCoordinates": {
+        "x": -5,
+        "y": 784
+      },
+      "blocks": [
+        {
+          "id": "laklsmnmtdkc18rqolfdvdcf",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Great! LeadSites helps real estate professionals generate more leads effortlessly. Can you share what you are looking for?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "c6d9yioeipx898o7odceoh7k",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Are you a solo agent, team, or brokerage?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ip8rhvt9wlo2q066aake8uy7",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "okvs21fsuzalqzk6wbp5audf",
+              "outgoingEdgeId": "ta5nmpgibfgij42ji3ppycx7",
+              "content": "Solo Agent"
+            },
+            {
+              "id": "tlsn2hc6p8ajecndn8pmrbzl",
+              "outgoingEdgeId": "r43oion7qvgcbmbtl0153m11",
+              "content": "Team"
+            },
+            {
+              "id": "xivjvbzr4b82lwr2e7sqc0ko",
+              "outgoingEdgeId": "e764jfpthi3n12mfss8h1omb",
+              "content": "Brokerage"
+            }
+          ],
+          "options": {
+            "variableId": "vfjdvw0tpq7pb1faymvhc106e"
+          }
+        }
+      ]
+    },
+    {
+      "id": "uofc34pzv3mo28etybdvxhss",
+      "title": "Group #8",
+      "graphCoordinates": {
+        "x": 399,
+        "y": 780
+      },
+      "blocks": [
+        {
+          "id": "ffmwfsmcdbbd5o5v2auoomk2",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "What kind of marketing assistance you are you looking for?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "xcfean047qvghkjqduh1epah",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "xpe2xh960kurgeh0vc0267zo",
+              "outgoingEdgeId": "v5qwocelka621jqc2uqdfyzd",
+              "content": "No assistance, our marketing is doing great!"
+            },
+            {
+              "id": "bg266n8smhzqz821h4aslatz",
+              "outgoingEdgeId": "zk99gp7alotdwmblevoxd4hm",
+              "content": "We are facing marketing challenges in our current business."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrrv6v0pvx6vyv6zt6dikqit",
+      "title": "Group #9",
+      "graphCoordinates": {
+        "x": 517,
+        "y": 1366
+      },
+      "blocks": [
+        {
+          "id": "xtdpgund5jjmlaabvy51z4y0",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Do you want to share marketing challenges you are facing ?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "wv43x4a8zani8xdnxp1poq4w",
+          "outgoingEdgeId": "f4pdu9lu8hyy7xny2z1q151x",
+          "type": "text input",
+          "options": {
+            "variableId": "va5u0b9exrehiehrnwibhf5ng"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eltdt218qeudduk4yu6n58k5",
+      "title": "Group #10",
+      "graphCoordinates": {
+        "x": 813.58,
+        "y": 792.67
+      },
+      "blocks": [
+        {
+          "id": "dgsg34gbjpy9zuwfyudjlcbo",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Are you looking for lead generation, branding, or automation?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "dkcwowydlx4tcno4wr5slij8",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "n1vymjz71xbaaib3mbiak0q4",
+              "outgoingEdgeId": "vksn2pzizzq6fqo7i3dm0gft",
+              "content": "Lead Generation"
+            },
+            {
+              "id": "wd20hgt4croiqkafxps68dae",
+              "outgoingEdgeId": "s7tck4jkcote6lvbqe6ccypv",
+              "content": "Branding"
+            },
+            {
+              "id": "dmkcdjuzcl4h7nb17bh9pg3t",
+              "outgoingEdgeId": "tysx1hu6o0u2awnpce8uibtx",
+              "content": "SEO and Marketing Automation"
+            },
+            {
+              "id": "sw9b9qqqs3uv9h4iscgu0f7n",
+              "outgoingEdgeId": "b5bmshcosdzu6x070csv190f",
+              "content": "All above"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ytfal1wrpq43jawglpq5eyno",
+      "title": "Group #11",
+      "graphCoordinates": {
+        "x": 1183.58,
+        "y": 797.67
+      },
+      "blocks": [
+        {
+          "id": "xt8w5f9x05z370e2xpe49fh3",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Please share your full name"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "u9oxs1elpion6vf3f41cs6h8",
+          "outgoingEdgeId": "bgof94jb94ntp4exztveain4",
+          "type": "text input",
+          "options": {
+            "variableId": "vozjqh8hhzsrcuj905u97qyg3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "i7zqou0xk4awyun2g1pa3vwq",
+      "title": "Group #12",
+      "graphCoordinates": {
+        "x": 1189.833333333333,
+        "y": 1091.416666666667
+      },
+      "blocks": [
+        {
+          "id": "mutxxdlthxobn7dbombq66y3",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Please share your email"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "cffw65w5j3dppp3weu0ax8yi",
+          "outgoingEdgeId": "apm0nbrz9o0y6a23lyp1eahr",
+          "type": "email input",
+          "options": {
+            "variableId": "vbqu5leqs2cec8kckva8y93hz"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gi7iwb7dmt6bnf7a69t8atqv",
+      "title": "Group #13",
+      "graphCoordinates": {
+        "x": 1197.333333333333,
+        "y": 1377.666666666667
+      },
+      "blocks": [
+        {
+          "id": "lznjtn8njcb70swmzvu6kuf1",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Please share your phone number"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "aefsw9ehm6sy9kqkmwwsaji7",
+          "outgoingEdgeId": "b2hn24v0452ff8d4pa8rkzuu",
+          "type": "number input",
+          "options": {
+            "variableId": "vz3ligynarbyrgix880gjxlfz"
+          }
+        }
+      ]
+    },
+    {
+      "id": "yfrmgvz6yc9luwmp9qm689vp",
+      "title": "Group #14",
+      "graphCoordinates": {
+        "x": 1642.33,
+        "y": 805.17
+      },
+      "blocks": [
+        {
+          "id": "lq3ql8zz9v556b00hmq0cj1d",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Would you like a demo of EAP Platform?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "tv6tsw8wbhn0vrw6iy89cdqy",
+          "outgoingEdgeId": "g67ven32arxrkqybr2c8b11b",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "zr017jc9biroy92zn0jfddze",
+              "outgoingEdgeId": "irluujlf1z6rma43817mejoh",
+              "content": "Yes"
+            },
+            {
+              "id": "bk1m7wy0r4axf312o1xnh0nv",
+              "outgoingEdgeId": "c68yl1dwcx4wq9okppj6acps",
+              "content": "No"
+            },
+            {
+              "id": "d7eoefqlortjug02beup3ivy",
+              "content": "I'm ready to purchase!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mszxcz2sg0f98xbxhm7g3mxl",
+      "title": "Group #15",
+      "graphCoordinates": {
+        "x": 2151.08,
+        "y": 1007.67
+      },
+      "blocks": [
+        {
+          "id": "jddbrkrm4hl1uxidc1c3jav1",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Thank you for reaching Easy Agent Pro. We are glad to serve you. "
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "gfbnyralhgp93xs5n9yff1vm",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Is there anything you want to know ?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "kyr0s8b3nw87pdkgj9y9q14j",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "a28mqcwl7yhwpishpx2o5v34",
+              "outgoingEdgeId": "wk9j853plxrre7z8bh5lcg14",
+              "content": "Yes"
+            },
+            {
+              "id": "lea61xqi44xq3o9khe1krerf",
+              "outgoingEdgeId": "g8xshrwyb73mz2sjidl6guu1",
+              "content": "No"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ezouqanc9edx4mziuhv7o8wd",
+      "title": "Group #16",
+      "graphCoordinates": {
+        "x": 2587.33,
+        "y": 1082.67
+      },
+      "blocks": [
+        {
+          "id": "odql03ktgva0mf336xavg990",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "How can we help you today?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "j7uru8lrtr0od9sctjtno3rp",
+          "type": "Jump",
+          "options": {
+            "groupId": "l2011xqsisobt2m5dp8z8qe1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kl0dzcz33rhyngbdwad58sto",
+      "title": "Group #17",
+      "graphCoordinates": {
+        "x": 2603.58,
+        "y": 1316.42
+      },
+      "blocks": [
+        {
+          "id": "ayvex3d54fiwzpnfovps1bzl",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Thank you for reaching out!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tvbchp27dmnz3f6nfz4az7dt",
+      "title": "Schedule Consultation Call",
+      "graphCoordinates": {
+        "x": -5.17,
+        "y": 1902.67
+      },
+      "blocks": [
+        {
+          "id": "em9j6afpwdvjj7utlphjhuom",
+          "outgoingEdgeId": "mz60bmyn674x425w3ts7l20l",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Ok, let me quickly collect your information so I can arrange a call."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "aknp7a6m2pre3havyximqv9i",
+      "title": "Group #19",
+      "graphCoordinates": {
+        "x": 389.8333333333335,
+        "y": 1895.166666666667
+      },
+      "blocks": [
+        {
+          "id": "yolwyu8anq94xmjcer1slmh9",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "What's your contact number ?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "qkoausbsdewa3n08bmmd9jh7",
+          "outgoingEdgeId": "uwdwd9o3wntltmknz7qp2sxm",
+          "type": "number input",
+          "options": {
+            "variableId": "vniu52ncv4miht4yu9yl6oa92"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wl73ksbzmgp1f8072obr9x5y",
+      "title": "Group #20",
+      "graphCoordinates": {
+        "x": 778.58,
+        "y": 1890.17
+      },
+      "blocks": [
+        {
+          "id": "tix9elhotby1pxf33cywt15l",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "What is your email address?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "dizz435lejha32oy65zseu12",
+          "outgoingEdgeId": "ga922api5tuf4ypi8dp4aje3",
+          "type": "email input",
+          "options": {
+            "variableId": "vyoxe0kry9v73fd0awvlayoe5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nimf1suaftyz6ninyvvj3glz",
+      "title": "Group #21",
+      "graphCoordinates": {
+        "x": 1179.83,
+        "y": 1883.92
+      },
+      "blocks": [
+        {
+          "id": "y6q4j0jz0ekguyuh4ts0ej32",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Great!"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Please Give us a short discription of what you are looking for."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "qa571yonmgidjgxmxnsg6qn6",
+          "outgoingEdgeId": "b043ei9k6cpnz42nc6celm3p",
+          "type": "text input",
+          "options": {
+            "variableId": "vuwk5bbv7wc6n5reiful5m243"
+          }
+        }
+      ]
+    },
+    {
+      "id": "yirl78rkbu6ppsq518fnkd9g",
+      "title": "Group #22",
+      "graphCoordinates": {
+        "x": 1559.833333333333,
+        "y": 1898.916666666667
+      },
+      "blocks": [
+        {
+          "id": "pva6v4ntsec6j4nbdnho95g9",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "What will be the best time to connect with you?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "xxk8knk62ojiptcynjl782ph",
+          "outgoingEdgeId": "n3bwe30m096rdjb8kx65mj3k",
+          "type": "time input",
+          "options": {
+            "variableId": "vxn6arvpvgjlmxecmbhta5oad"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gobydy6sd51k67paq5n6k5e8",
+      "title": "Group #23",
+      "graphCoordinates": {
+        "x": 1951.083333333333,
+        "y": 1911.416666666667
+      },
+      "blocks": [
+        {
+          "id": "a6pauxbdma3s2f736vtb6ivf",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Thanks! We will have one of our reps reach out. Thank you for choosing Easy Agent PRO!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "nat63j44lq79tdsjhhexamrx",
+      "title": "Demo and Trial signup",
+      "graphCoordinates": {
+        "x": -22.67,
+        "y": 2301.42
+      },
+      "blocks": [
+        {
+          "id": "yokj0z4dcsue67b1lx4zehu7",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "We'd love to show you how LeadSites can transform your real estate business. Would you like a demo or free trial?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ybsqosyb0ko0fbxnsm7qp1bi",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "rujdq3r3ih0fg25wcknnpcyh",
+              "outgoingEdgeId": "ndulurrsbtwznrqe5ldemj7b",
+              "content": "Demo"
+            },
+            {
+              "id": "pwu12mrminzljflw894676oy",
+              "outgoingEdgeId": "cocarbib26augxo6hu01b3qh",
+              "content": "Free Trial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uopm0w66q2tioutdkrcflle2",
+      "title": "Group #23",
+      "graphCoordinates": {
+        "x": 1008.58,
+        "y": 477.67
+      },
+      "blocks": [
+        {
+          "id": "ut5fwwb0mruc9397p915o8zf",
+          "type": "Jump",
+          "options": {
+            "groupId": "nat63j44lq79tdsjhhexamrx"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bl9tdcnd804jgbgjgms1h67y",
+      "title": "Group #24",
+      "graphCoordinates": {
+        "x": 367.33,
+        "y": 2337.67
+      },
+      "blocks": [
+        {
+          "id": "d9iv2ru5urpifw4jb8qchuqb",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "When would you be available for a demo?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "h1agzr0daz3hjaf4t7oolnzg",
+          "outgoingEdgeId": "ff6opoab3fwj0txk9mj4zl9u",
+          "type": "date input",
+          "options": {
+            "variableId": "vi5mze0ojzg7zm1q3bupig7ac"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bsn6q71jgn9tdhveq3w2xnqw",
+      "title": "Group #25",
+      "graphCoordinates": {
+        "x": 781.0833333333335,
+        "y": 2347.666666666667
+      },
+      "blocks": [
+        {
+          "id": "vbffbzf4wbk2pdbvk5w98u2f",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Who is your MLS Board?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lax1z4vrz9twouu1mliioo1x",
+          "outgoingEdgeId": "rigbgekfl4ky778doviwne7n",
+          "type": "text input",
+          "options": {
+            "variableId": "vjb4m94i9q27w3p07ps9mifzg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d2kwq2djh68vfsrtvrpylj22",
+      "title": "Group #26",
+      "graphCoordinates": {
+        "x": 1148.583333333333,
+        "y": 2340.166666666667
+      },
+      "blocks": [
+        {
+          "id": "c2bxhtxg35qgesnml7z7w6pr",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "What date and time would you like for our team to reach out?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "y0ya7r4jkf0rcwwxj5npo9uq",
+          "outgoingEdgeId": "it7gqf66f9a6u9e3v3ywe4w0",
+          "type": "text input",
+          "options": {
+            "variableId": "vfbx4r3cxlkw22nluvrypgo6k"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pzrn1agmbglblop31qigkw3v",
+      "title": "Group #27",
+      "graphCoordinates": {
+        "x": 1547.333333333333,
+        "y": 2410.166666666667
+      },
+      "blocks": [
+        {
+          "id": "z2fj2noc4cntpm4t9jz46gxm",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Thanks! Is there anything else you would like to know? "
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "pjs1ikd533qx9p9uqi7xv2rh",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "y1vjjfgjjti9x598nvpjr254",
+              "outgoingEdgeId": "haqmoc6cboo5z4j3temi76r8",
+              "content": "Yes"
+            },
+            {
+              "id": "hsmgjyb69nqgw6jaz5x3m0c6",
+              "outgoingEdgeId": "tjkbx6qte91b39xo1s93xjop",
+              "content": "No"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cwoaf5lg813ogqhkoaui7ngk",
+      "title": "Group #28",
+      "graphCoordinates": {
+        "x": 1952.33,
+        "y": 2425.17
+      },
+      "blocks": [
+        {
+          "id": "ue6a9e326p42119zaycsx04f",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "How can we help you today?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "p2qa1p55qxfbywty96ztd3on",
+          "type": "Jump",
+          "options": {
+            "groupId": "l2011xqsisobt2m5dp8z8qe1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ferp4vgm8vjc6j52u53tdmdh",
+      "title": "Group #29",
+      "graphCoordinates": {
+        "x": 1954.83,
+        "y": 2657.67
+      },
+      "blocks": [
+        {
+          "id": "fr27ofddnks2p0xiybkqbkah",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Thanks for reaching out!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ejtzli34exh9gh75gqt08jlj",
+      "title": "Group #30",
+      "graphCoordinates": {
+        "x": 367.33,
+        "y": 2633.92
+      },
+      "blocks": [
+        {
+          "id": "l8vijkbun2o1zesj7nq4zyzi",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "What key features do you want to see in action?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "hype8hvdakfnqg3ka0b368a1",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "kk2mlnuro6p1y2h4vvu17icm",
+              "outgoingEdgeId": "vmukp8jpw372e899entz2944",
+              "content": "LeadSites (IDX Websites)"
+            },
+            {
+              "id": "cm04znh5gfw57621aw0azli3",
+              "outgoingEdgeId": "i7g7s3bpuac7de5ytoat99xw",
+              "content": "Built-In CRM"
+            },
+            {
+              "id": "te37h352q2hi1lkp8tgrotlq",
+              "outgoingEdgeId": "s9025811hg3fy4iejj5sik22",
+              "content": "Content Marketing"
+            },
+            {
+              "id": "gfu169w2cf44cjgpt3g6xq6h",
+              "outgoingEdgeId": "z8l6r73opmq182bg38wf5a6q",
+              "content": "Lead Capture Tools"
+            },
+            {
+              "id": "nulzfp3fb6eb5sgy4lxj02j9",
+              "outgoingEdgeId": "uksjwbvzotkg5lx7txticqub",
+              "content": "Support and Training"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c8e30ru312yc2w9peiuynxs2",
+      "title": "Group #31",
+      "graphCoordinates": {
+        "x": 803.5833333333335,
+        "y": 2691.416666666667
+      },
+      "blocks": [
+        {
+          "id": "mghruabjx3v17ytv4tjoe3db",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Please give us Name, Email, and Telephone number so we can build your free trial site."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "pa9sfn3fdbyxvfvvqc3o69sd",
+          "type": "text input",
+          "options": {
+            "variableId": "vkovo3nfarm26l6xvlboqotvi"
+          }
+        },
+        {
+          "id": "ao6whboqpvr71oiuwm92bpie",
+          "type": "email input",
+          "options": {
+            "variableId": "vptlnb5zqmu45lfktl4jlyfs4"
+          }
+        },
+        {
+          "id": "mshpx9ufqu6tx3tasej2913p",
+          "type": "number input",
+          "options": {
+            "variableId": "vrz2klfk6gj3uvdu2ixkkmn22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wd68eqsf8afihd1gz0fbb44v",
+      "title": "Group #32",
+      "graphCoordinates": {
+        "x": 1152.33,
+        "y": 2725.17
+      },
+      "blocks": [
+        {
+          "id": "ydakpsaioeouk9436r5wcel2",
+          "outgoingEdgeId": "tstldjcfyqwly7o6w2pmft31",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Great, your free trial site will be sent to your shortly to your email!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3tj9ranfcupt3ojwsecdr9r",
+      "title": "Pricing and plans",
+      "graphCoordinates": {
+        "x": -18.92,
+        "y": 3392.67
+      },
+      "blocks": [
+        {
+          "id": "mygoggngolyyemlakqrai4wb",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "We offer flexible pricing plans based on your needs. Would you like a breakdown of features and pricing options?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "zvrg74jtsboh7hr5a5wc7jg3",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "What specific features are you most interested in ?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "y29zo0s7yb9qv0hnpi3w2hgn",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "hfo17ly2rl6qtexyi2t5vl02",
+              "outgoingEdgeId": "rshd1zuuo7vrdfruexhchzhy",
+              "content": "Marketing"
+            },
+            {
+              "id": "zplimnuo9kh4xo3qnf771m4d",
+              "outgoingEdgeId": "qm8r1wiiob213v06rwwxra6x",
+              "content": "IDX Integration"
+            },
+            {
+              "id": "s3apv98okssyo4lxesmx98tr",
+              "outgoingEdgeId": "vij1cxotu8a4yg37zlvxlymz",
+              "content": "Beautiful Website Design"
+            },
+            {
+              "id": "jjc4m4vi0f00c583xkb6d6xf",
+              "outgoingEdgeId": "tepx8dcfx7qyhjkvir33cfh3",
+              "content": "All of the above"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uhqi5wrynn5bbo0maj2iwqgc",
+      "title": "Group #34",
+      "graphCoordinates": {
+        "x": 1008.58,
+        "y": 331.42
+      },
+      "blocks": [
+        {
+          "id": "kuxy4rw1svfqg3l25ifho8f2",
+          "type": "Jump",
+          "options": {
+            "groupId": "t3tj9ranfcupt3ojwsecdr9r"
+          }
+        }
+      ]
+    },
+    {
+      "id": "imo494j226cywipggwdddnki",
+      "title": "Group #35",
+      "graphCoordinates": {
+        "x": 2137.33,
+        "y": 798.92
+      },
+      "blocks": [
+        {
+          "id": "ybt7h1c7kr92qgy2q08puott",
+          "type": "Jump",
+          "options": {
+            "groupId": "nat63j44lq79tdsjhhexamrx"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tl6q1dpqxib3s75cwwojqrdu",
+      "title": "Group #36",
+      "graphCoordinates": {
+        "x": 1791.083333333333,
+        "y": 1310.166666666667
+      },
+      "blocks": [
+        {
+          "id": "t3e9h1lxnt5d7msa6d3lq552",
+          "type": "Jump",
+          "options": {
+            "groupId": "t3tj9ranfcupt3ojwsecdr9r"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bc2mxoo3el3yrlczk397x5to",
+      "title": "Group #37",
+      "graphCoordinates": {
+        "x": 466.08,
+        "y": 3403.92
+      },
+      "blocks": [
+        {
+          "id": "ofq8f9t59r0x8x12srsuscwk",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "We can handle everything for you, making the process seamless and stress-free. Or, if you prefer a hands-on approach, we’ll provide the tools and guidance you need to do it yourself."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "x09wdbfvhywa5qyn0u4p60sh",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "owjbpdv759pg84plm1lcjzdw",
+              "outgoingEdgeId": "y8s8glparg7uqbnl09k3ucie",
+              "content": "Do-It-Yourself: You’re in control and we’ll provide the marketing tools and guidance to support your success."
+            },
+            {
+              "id": "y616vva5r15fb58f3t1eevev",
+              "outgoingEdgeId": "rsqcs39n0u2vtxtrc0eyrx0r",
+              "content": "Done-for-you: We take care of everything so you don’t have to worry."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s7e0qwf73t58s9t8kj8kkv28",
+      "title": "Group #38",
+      "graphCoordinates": {
+        "x": 913.58,
+        "y": 3411.42
+      },
+      "blocks": [
+        {
+          "id": "rhqreeeaqf3q7jauq8r4q1sa",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Sit back and let us handle everything! Our Premium plan ($899/month) is fully hands-off—we build your website, run your ads (ad spend not included), and manage your funnels in GoHighLevel CRM. All you need to do is follow up with your leads. Ready to grow effortlessly"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ckvjr5fgk1l0v468ygg3ozk2",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Buy Now"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "jefgbihnswfyrw9nmbtc8ha2",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "url": "https://easyagentpro.com/signup/?plan=ultimatePlus399",
+                    "type": "a",
+                    "children": [
+                      {
+                        "text": "https://easyagentpro.com/signup/?plan=ultimatePlus399"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ywve14lbi8ti7offtl1u70i1",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "wuo410bi8y1d98b0eakf04db",
+              "outgoingEdgeId": "zlw13df5xsi4n6241l8y46rw",
+              "content": "Not right now."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f1ovsub8rq62enmyaxsv8esj",
+      "title": "Other Pricing Options?",
+      "graphCoordinates": {
+        "x": 1358.58,
+        "y": 3607.67
+      },
+      "blocks": [
+        {
+          "id": "spm4fwp7dk2pow3tf64bwssy",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Thanks! Would you like to hear about our other subscriptions?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "g3q2wh2f1d93b2qizf3w24fe",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "qxgg6pgilds8skj45dznaczv",
+              "outgoingEdgeId": "kxa0qecdyjvmwckamo1townh",
+              "content": "Yes"
+            },
+            {
+              "id": "vbxf0s3gegxoffgemynqi1km",
+              "content": "No"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tgokakj0q6vw37ovl1lsp8uc",
+      "title": "Group #40",
+      "graphCoordinates": {
+        "x": 917.33,
+        "y": 4148.92
+      },
+      "blocks": [
+        {
+          "id": "fhrsytuhbhjf0kr2979sfs7a",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Great choice! Our Ultimate+ plan is perfect for you. For $399/month, you’ll get a website, GoHighLevel CRM, and fully managed marketing services (ad spend not included). Ready to take control with our support?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3n988jasl6igc7cvirv2ar7",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Buy Now"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "url": "https://easyagentpro.com/signup/?plan=ultimatePlus399",
+                    "type": "a",
+                    "children": [
+                      {
+                        "text": "https://easyagentpro.com/signup/?plan=ultimatePlus399"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "lvhfxqetnw0fqa51jspyz4h8",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "iitv1vwm1o3bbdimx27vmkqq",
+              "outgoingEdgeId": "nknkryag1utwujyhisbm71mu",
+              "content": "Not right now."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m0nuksqlp61s8medwmbnv67r",
+      "title": "Group #41",
+      "graphCoordinates": {
+        "x": 1831.08,
+        "y": 3608.92
+      },
+      "blocks": [
+        {
+          "id": "nh0k2xy5ytjx2n8s9ik6ns4p",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "No problem! We offer multiple plans to fit different needs and budgets. Here’s a quick breakdown:\n\n✅ Pro – $229/month (DIY website & CRM)\n✅ Ultimate – $279/month (More IDX tools & templates)\n✅ Ultimate+ – $399/month (Includes DFY Pay-Per-Click Ads)\n✅ Premium – $899/month (Fully managed marketing & CRM)\n\nAll plans include: Weekly training, phone support, and a $199 activation fee.\n\nWould you like help finding the best fit for you?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "g1g5htqn3l0tnzueyve5bzx7",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "qhh4ul0mw5zr9jkbw48nvsl7",
+              "outgoingEdgeId": "oyodmul0vwn24d1l2ttlpd6y",
+              "content": "Tell me more about PRO"
+            },
+            {
+              "id": "usctui2modtr5u4z2cg5rjyb",
+              "outgoingEdgeId": "hg40cp2qp46lbeurhuggfvlk",
+              "content": "Tell me more about Ultimate"
+            },
+            {
+              "id": "gbb6k5igutunbuzvh3eehrph",
+              "outgoingEdgeId": "glcspa8wq8updf3b3vs9sooc",
+              "content": "Tell me more about Ultimate+"
+            },
+            {
+              "id": "dm98c0p6qs60i34kiesd4dnj",
+              "outgoingEdgeId": "y63v3n7h5jf9ynnofa6s6g8c",
+              "content": "Tell me more about Premium"
+            },
+            {
+              "id": "h22mmj6lkueuepxzwwhyp8u2",
+              "outgoingEdgeId": "ctaswjd2ncoo0kzwnz11o1ty",
+              "content": "Compare all plans"
+            },
+            {
+              "id": "j2nd3x8j3uknlm0lz9gg2s2d",
+              "outgoingEdgeId": "hw1orcm2ftm6bk9p83nqhdgi",
+              "content": "I’m ready to subscribe!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "k593k1jthubl4zosoxjjwn5g",
+      "title": "Group #42",
+      "graphCoordinates": {
+        "x": 2127.33,
+        "y": 4855.17
+      },
+      "blocks": [
+        {
+          "id": "w1pu4aeyf5ro6bzstihv4mwr",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Here’s a quick side-by-side comparison:\n\nPro ($229/month): Website, CRM, DFY blogs"
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": "\nUltimate ($279/month): Adds IDX tools & premium templates"
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": "\nUltimate+ ($399/month): Adds DFY PPC ads"
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": "\nPremium ($899/month): Full-service marketing (PPC, SEO, Social, CRM)"
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": "\nAll plans include weekly training & phone support! Let us know which plan suits you best."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "brlxa0iv360hha6m4ei6m11e",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "bjy1lf0sh5pbv2i83zafixls",
+              "outgoingEdgeId": "ny1rxwi7sn0gd85plxlahtmq",
+              "content": "I’m ready to subscribe!"
+            },
+            {
+              "id": "gx0zexhctlxh9x38m7c0n4yd",
+              "outgoingEdgeId": "exwlr7wop7dhiqdrqd6aqvph",
+              "content": "Not ready quite yet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "o5t3cfrqf7kez139tu9udcw3",
+      "title": "Group #43",
+      "graphCoordinates": {
+        "x": 2497.33,
+        "y": 5607.67
+      },
+      "blocks": [
+        {
+          "id": "v9zhgcrznd86lwuzou4ln8sf",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "No problem! We’re here to help whenever you’re ready. In the meantime, would you like to explore your options? You can:"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "yg6hz8unkkmvbcs73rgy3zlt",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "uadhvpw3rphjwt85j8o3b0jq",
+              "outgoingEdgeId": "x9h1gwno566x0tkdwhhq8cdz",
+              "content": "🌐 Learn about LeadSites, our powerful website solution"
+            },
+            {
+              "id": "btkwc876aea2svvurhfwazuj",
+              "outgoingEdgeId": "ryazb2uivo7yc7huihh98lsc",
+              "content": "📅 Book a demo to see how everything works"
+            },
+            {
+              "id": "jr5lorx1ioaes0l7p6i54hmq",
+              "outgoingEdgeId": "s3w2hpnhdd1qs9o4tg9lpgvi",
+              "content": "🎟 Try a free demo or sign up for a free trial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "k87cbcyoflh1iwypwszaplkh",
+      "title": "Group #44",
+      "graphCoordinates": {
+        "x": 2946.08,
+        "y": 5823.92
+      },
+      "blocks": [
+        {
+          "id": "e8ta5yn0xplkm067l32azmkq",
+          "type": "Jump",
+          "options": {
+            "groupId": "gkejggx43bvemz4ge15t79bn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b8n2s6hhys2554a4c7d6447p",
+      "title": "Group #45",
+      "graphCoordinates": {
+        "x": 2949.83,
+        "y": 6040.17
+      },
+      "blocks": [
+        {
+          "id": "cl5qwkqjsoo81r4hcu87hswh",
+          "type": "Jump",
+          "options": {
+            "groupId": "tvbchp27dmnz3f6nfz4az7dt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zl6jlma2ffxcea1mpif30pl2",
+      "title": "Group #46",
+      "graphCoordinates": {
+        "x": 2963.58,
+        "y": 6230.17
+      },
+      "blocks": [
+        {
+          "id": "p83vim1cza30dj3wfwd3enet",
+          "type": "Jump",
+          "options": {
+            "groupId": "nat63j44lq79tdsjhhexamrx"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vsi4lz28bf5y455t512um1gw",
+      "title": "Group #47",
+      "graphCoordinates": {
+        "x": 2752.33,
+        "y": 4812.67
+      },
+      "blocks": [
+        {
+          "id": "oi87q9yv83ldl5hxaa64rubk",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Awesome! Let’s get you set up. Click below to start your subscription."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "kg6sh5qoxfqx159vzo8rxpf9",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Buy ULTIMATE Now"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "url": "https://www.easyagentpro.com/signup/?plan=pro229",
+                    "type": "a",
+                    "children": [
+                      {
+                        "text": "https://www.easyagentpro.com/signup/?plan=pro229"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "suwnckl94rn1uyv0oipz46cw",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Buy PRO Now"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "url": "https://www.easyagentpro.com/signup/?plan=pro229",
+                    "type": "a",
+                    "children": [
+                      {
+                        "text": "https://www.easyagentpro.com/signup/?plan=pro229"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "w2rw8wu9c1ks10goc11qj947",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Buy ULTIMATE+ Now"
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "url": "https://easyagentpro.com/signup/?plan=ultimatePlus399",
+                    "type": "a",
+                    "children": [
+                      {
+                        "text": "https://easyagentpro.com/signup/?plan=ultimatePlus399"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": "\r"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "uh4oo8h1nl6cso8fs3ersmjm",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Buy PREMIUM Now"
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "url": "https://www.easyagentpro.com/signup/?plan=premium",
+                    "type": "a",
+                    "children": [
+                      {
+                        "text": "https://www.easyagentpro.com/signup/?plan=premium"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p143x0wstbaatp2m65vv8q86",
+      "title": "Pro",
+      "graphCoordinates": {
+        "x": 2262.33,
+        "y": 3256.42
+      },
+      "blocks": [
+        {
+          "id": "ndoz2duv7um6lw4mhkcm8ksc",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Great choice! The Pro plan ($229/month) gives you a fully functioning website with IDX Search, EAP CRM, and advanced marketing tools. You’ll also get weekly training, phone support, and DFY blogs twice a week to help you grow. This is perfect if you want a solid foundation at an affordable price! Ready to get started?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "dnoktf373ikquyemugiuj6lf",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Buy Now"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "url": "https://www.easyagentpro.com/signup/?plan=pro229",
+                    "type": "a",
+                    "children": [
+                      {
+                        "text": "https://www.easyagentpro.com/signup/?plan=pro229"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "xg263ltvyk3spznrfpj0fthy",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "e4osl9uv1fbcxm5tp5z9zpxt",
+              "outgoingEdgeId": "kv12v3610sq8lew2yrel3dfq",
+              "content": "Not right now."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dzobie5z5ks7zfl8ew4namdc",
+      "title": "Ultimate",
+      "graphCoordinates": {
+        "x": 2683.58,
+        "y": 3247.67
+      },
+      "blocks": [
+        {
+          "id": "s89kyrk1iaamsoog1c27kuxo",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Great choice! The Pro plan ($229/month) gives you a fully functioning website with IDX Search, EAP CRM, and advanced marketing tools. You’ll also get weekly training, phone support, and DFY blogs twice a week to help you grow. This is perfect if you want a solid foundation at an affordable price! Ready to get started?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "zx99rxxh1aujr57o6yyg591a",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Buy Now"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "url": "https://www.easyagentpro.com/signup/?plan=pro229",
+                    "type": "a",
+                    "children": [
+                      {
+                        "text": "https://www.easyagentpro.com/signup/?plan=pro229"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "j5u9rw560pqzn3iog183tnqz",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "htvpoy8pjhtzd5rkh16j444l",
+              "outgoingEdgeId": "qbtqgy7brs13scqsww57qjtp",
+              "content": "Not right now."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dkxonzkt9uc4r9bbcpcuczpv",
+      "title": "Ultimate+",
+      "graphCoordinates": {
+        "x": 3126.08,
+        "y": 3248.92
+      },
+      "blocks": [
+        {
+          "id": "wla0surdo2v02p7mu0yoxz36",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Great choice! Our Ultimate+ plan is perfect for you. For $399/month, you’ll get a website, GoHighLevel CRM, and fully managed marketing services (ad spend not included). Ready to take control with our support?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ibpoxnc7zoxyhh7feg4py8x8",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Buy Now"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "url": "https://easyagentpro.com/signup/?plan=ultimatePlus399",
+                    "type": "a",
+                    "children": [
+                      {
+                        "text": "https://easyagentpro.com/signup/?plan=ultimatePlus399"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "z3lifgsuy4opj32wb0zb6mum",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "j8ff4kayzo5yvvqkzeoi7ohi",
+              "outgoingEdgeId": "vgsehn2dkt0akn30cms70j8a",
+              "content": "Not right now."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h5btdlbc6rdddmzxaz7eg2yq",
+      "title": "Premium",
+      "graphCoordinates": {
+        "x": 3516.08,
+        "y": 3232.67
+      },
+      "blocks": [
+        {
+          "id": "bjfj7l330cu2761cj4c5qkej",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Sit back and let us handle everything! Our Premium plan ($899/month) is fully hands-off—we build your website, run your ads (ad spend not included), and manage your funnels in GoHighLevel CRM. All you need to do is follow up with your leads. Ready to grow effortlessly"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "fmwy0x0rqpf7s636wrbfhp2t",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Buy Now"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "url": "https://easyagentpro.com/signup/?plan=ultimatePlus399",
+                    "type": "a",
+                    "children": [
+                      {
+                        "text": "https://easyagentpro.com/signup/?plan=ultimatePlus399"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "xlnqg80ostzjlqza9ccisfvr",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "cw1f1jd80gbwr11m513hr6mo",
+              "outgoingEdgeId": "b9sxe6poq6tjpww4ysd0z7li",
+              "content": "Not right now."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lwljreyepju4epyl3us2wtyy",
+      "title": "Group #52",
+      "graphCoordinates": {
+        "x": 2907.33,
+        "y": 4135.17
+      },
+      "blocks": [
+        {
+          "id": "rynmr21k2uvohh6hai56jxye",
+          "type": "Jump",
+          "options": {
+            "groupId": "f1ovsub8rq62enmyaxsv8esj"
+          }
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "vg39buehfkgl6yitr7kqege0",
+      "from": {
+        "eventId": "kxx8zwbfq615i2mpwd4a9fjc"
+      },
+      "to": {
+        "groupId": "lvqbj8yek0n2qn5tjmo1kb2h"
+      }
+    },
+    {
+      "id": "o9p2li7hfk6soiypjwhsbzqy",
+      "from": {
+        "blockId": "qw6besrro70q6jzwm55pxh83"
+      },
+      "to": {
+        "groupId": "l2011xqsisobt2m5dp8z8qe1"
+      }
+    },
+    {
+      "id": "q2c707qq3lg4dfmh7vt5gmwl",
+      "from": {
+        "blockId": "kf806lhe0c1zyv2m839eu0i7",
+        "itemId": "pxb4ehysfk6hl0xyw6l4eedd"
+      },
+      "to": {
+        "groupId": "i1jlcxzfr3n32b2p1byyyhmi"
+      }
+    },
+    {
+      "id": "yado966jk8dm2v2axna9y246",
+      "from": {
+        "blockId": "kf806lhe0c1zyv2m839eu0i7",
+        "itemId": "oh40h19n5ytrnt6obu6wrcar"
+      },
+      "to": {
+        "groupId": "stoc9txsxz04zap60nx9zmgd"
+      }
+    },
+    {
+      "id": "ta5nmpgibfgij42ji3ppycx7",
+      "from": {
+        "blockId": "ip8rhvt9wlo2q066aake8uy7",
+        "itemId": "okvs21fsuzalqzk6wbp5audf"
+      },
+      "to": {
+        "groupId": "uofc34pzv3mo28etybdvxhss"
+      }
+    },
+    {
+      "id": "r43oion7qvgcbmbtl0153m11",
+      "from": {
+        "blockId": "ip8rhvt9wlo2q066aake8uy7",
+        "itemId": "tlsn2hc6p8ajecndn8pmrbzl"
+      },
+      "to": {
+        "groupId": "uofc34pzv3mo28etybdvxhss"
+      }
+    },
+    {
+      "id": "e764jfpthi3n12mfss8h1omb",
+      "from": {
+        "blockId": "ip8rhvt9wlo2q066aake8uy7",
+        "itemId": "xivjvbzr4b82lwr2e7sqc0ko"
+      },
+      "to": {
+        "groupId": "uofc34pzv3mo28etybdvxhss"
+      }
+    },
+    {
+      "id": "zk99gp7alotdwmblevoxd4hm",
+      "from": {
+        "blockId": "xcfean047qvghkjqduh1epah",
+        "itemId": "bg266n8smhzqz821h4aslatz"
+      },
+      "to": {
+        "groupId": "jrrv6v0pvx6vyv6zt6dikqit"
+      }
+    },
+    {
+      "id": "v5qwocelka621jqc2uqdfyzd",
+      "from": {
+        "blockId": "xcfean047qvghkjqduh1epah",
+        "itemId": "xpe2xh960kurgeh0vc0267zo"
+      },
+      "to": {
+        "groupId": "eltdt218qeudduk4yu6n58k5"
+      }
+    },
+    {
+      "id": "f4pdu9lu8hyy7xny2z1q151x",
+      "from": {
+        "blockId": "wv43x4a8zani8xdnxp1poq4w"
+      },
+      "to": {
+        "groupId": "eltdt218qeudduk4yu6n58k5"
+      }
+    },
+    {
+      "id": "vksn2pzizzq6fqo7i3dm0gft",
+      "from": {
+        "blockId": "dkcwowydlx4tcno4wr5slij8",
+        "itemId": "n1vymjz71xbaaib3mbiak0q4"
+      },
+      "to": {
+        "groupId": "ytfal1wrpq43jawglpq5eyno"
+      }
+    },
+    {
+      "id": "s7tck4jkcote6lvbqe6ccypv",
+      "from": {
+        "blockId": "dkcwowydlx4tcno4wr5slij8",
+        "itemId": "wd20hgt4croiqkafxps68dae"
+      },
+      "to": {
+        "groupId": "ytfal1wrpq43jawglpq5eyno"
+      }
+    },
+    {
+      "id": "tysx1hu6o0u2awnpce8uibtx",
+      "from": {
+        "blockId": "dkcwowydlx4tcno4wr5slij8",
+        "itemId": "dmkcdjuzcl4h7nb17bh9pg3t"
+      },
+      "to": {
+        "groupId": "ytfal1wrpq43jawglpq5eyno"
+      }
+    },
+    {
+      "id": "b5bmshcosdzu6x070csv190f",
+      "from": {
+        "blockId": "dkcwowydlx4tcno4wr5slij8",
+        "itemId": "sw9b9qqqs3uv9h4iscgu0f7n"
+      },
+      "to": {
+        "groupId": "ytfal1wrpq43jawglpq5eyno"
+      }
+    },
+    {
+      "id": "bgof94jb94ntp4exztveain4",
+      "from": {
+        "blockId": "u9oxs1elpion6vf3f41cs6h8"
+      },
+      "to": {
+        "groupId": "i7zqou0xk4awyun2g1pa3vwq"
+      }
+    },
+    {
+      "id": "apm0nbrz9o0y6a23lyp1eahr",
+      "from": {
+        "blockId": "cffw65w5j3dppp3weu0ax8yi"
+      },
+      "to": {
+        "groupId": "gi7iwb7dmt6bnf7a69t8atqv"
+      }
+    },
+    {
+      "id": "b2hn24v0452ff8d4pa8rkzuu",
+      "from": {
+        "blockId": "aefsw9ehm6sy9kqkmwwsaji7"
+      },
+      "to": {
+        "groupId": "yfrmgvz6yc9luwmp9qm689vp"
+      }
+    },
+    {
+      "id": "c68yl1dwcx4wq9okppj6acps",
+      "from": {
+        "blockId": "tv6tsw8wbhn0vrw6iy89cdqy",
+        "itemId": "bk1m7wy0r4axf312o1xnh0nv"
+      },
+      "to": {
+        "groupId": "mszxcz2sg0f98xbxhm7g3mxl"
+      }
+    },
+    {
+      "id": "wk9j853plxrre7z8bh5lcg14",
+      "from": {
+        "blockId": "kyr0s8b3nw87pdkgj9y9q14j",
+        "itemId": "a28mqcwl7yhwpishpx2o5v34"
+      },
+      "to": {
+        "groupId": "ezouqanc9edx4mziuhv7o8wd"
+      }
+    },
+    {
+      "id": "g8xshrwyb73mz2sjidl6guu1",
+      "from": {
+        "blockId": "kyr0s8b3nw87pdkgj9y9q14j",
+        "itemId": "lea61xqi44xq3o9khe1krerf"
+      },
+      "to": {
+        "groupId": "kl0dzcz33rhyngbdwad58sto"
+      }
+    },
+    {
+      "id": "mz60bmyn674x425w3ts7l20l",
+      "from": {
+        "blockId": "em9j6afpwdvjj7utlphjhuom"
+      },
+      "to": {
+        "groupId": "aknp7a6m2pre3havyximqv9i"
+      }
+    },
+    {
+      "id": "uwdwd9o3wntltmknz7qp2sxm",
+      "from": {
+        "blockId": "qkoausbsdewa3n08bmmd9jh7"
+      },
+      "to": {
+        "groupId": "wl73ksbzmgp1f8072obr9x5y"
+      }
+    },
+    {
+      "id": "ga922api5tuf4ypi8dp4aje3",
+      "from": {
+        "blockId": "dizz435lejha32oy65zseu12"
+      },
+      "to": {
+        "groupId": "nimf1suaftyz6ninyvvj3glz"
+      }
+    },
+    {
+      "id": "b043ei9k6cpnz42nc6celm3p",
+      "from": {
+        "blockId": "qa571yonmgidjgxmxnsg6qn6"
+      },
+      "to": {
+        "groupId": "yirl78rkbu6ppsq518fnkd9g"
+      }
+    },
+    {
+      "id": "n3bwe30m096rdjb8kx65mj3k",
+      "from": {
+        "blockId": "xxk8knk62ojiptcynjl782ph"
+      },
+      "to": {
+        "groupId": "gobydy6sd51k67paq5n6k5e8"
+      }
+    },
+    {
+      "id": "mhpeo8j68f4bgggs9ybqouzj",
+      "from": {
+        "blockId": "kf806lhe0c1zyv2m839eu0i7",
+        "itemId": "yr6ved8i0782t4vr3zm0bcy7"
+      },
+      "to": {
+        "groupId": "uopm0w66q2tioutdkrcflle2"
+      }
+    },
+    {
+      "id": "ndulurrsbtwznrqe5ldemj7b",
+      "from": {
+        "blockId": "ybsqosyb0ko0fbxnsm7qp1bi",
+        "itemId": "rujdq3r3ih0fg25wcknnpcyh"
+      },
+      "to": {
+        "groupId": "bl9tdcnd804jgbgjgms1h67y"
+      }
+    },
+    {
+      "id": "ff6opoab3fwj0txk9mj4zl9u",
+      "from": {
+        "blockId": "h1agzr0daz3hjaf4t7oolnzg"
+      },
+      "to": {
+        "groupId": "bsn6q71jgn9tdhveq3w2xnqw"
+      }
+    },
+    {
+      "id": "rigbgekfl4ky778doviwne7n",
+      "from": {
+        "blockId": "lax1z4vrz9twouu1mliioo1x"
+      },
+      "to": {
+        "groupId": "d2kwq2djh68vfsrtvrpylj22"
+      }
+    },
+    {
+      "id": "it7gqf66f9a6u9e3v3ywe4w0",
+      "from": {
+        "blockId": "y0ya7r4jkf0rcwwxj5npo9uq"
+      },
+      "to": {
+        "groupId": "pzrn1agmbglblop31qigkw3v"
+      }
+    },
+    {
+      "id": "haqmoc6cboo5z4j3temi76r8",
+      "from": {
+        "blockId": "pjs1ikd533qx9p9uqi7xv2rh",
+        "itemId": "y1vjjfgjjti9x598nvpjr254"
+      },
+      "to": {
+        "groupId": "cwoaf5lg813ogqhkoaui7ngk"
+      }
+    },
+    {
+      "id": "tjkbx6qte91b39xo1s93xjop",
+      "from": {
+        "blockId": "pjs1ikd533qx9p9uqi7xv2rh",
+        "itemId": "hsmgjyb69nqgw6jaz5x3m0c6"
+      },
+      "to": {
+        "groupId": "ferp4vgm8vjc6j52u53tdmdh"
+      }
+    },
+    {
+      "id": "cocarbib26augxo6hu01b3qh",
+      "from": {
+        "blockId": "ybsqosyb0ko0fbxnsm7qp1bi",
+        "itemId": "pwu12mrminzljflw894676oy"
+      },
+      "to": {
+        "groupId": "ejtzli34exh9gh75gqt08jlj"
+      }
+    },
+    {
+      "id": "vmukp8jpw372e899entz2944",
+      "from": {
+        "blockId": "hype8hvdakfnqg3ka0b368a1",
+        "itemId": "kk2mlnuro6p1y2h4vvu17icm"
+      },
+      "to": {
+        "groupId": "c8e30ru312yc2w9peiuynxs2"
+      }
+    },
+    {
+      "id": "i7g7s3bpuac7de5ytoat99xw",
+      "from": {
+        "blockId": "hype8hvdakfnqg3ka0b368a1",
+        "itemId": "cm04znh5gfw57621aw0azli3"
+      },
+      "to": {
+        "groupId": "c8e30ru312yc2w9peiuynxs2"
+      }
+    },
+    {
+      "id": "s9025811hg3fy4iejj5sik22",
+      "from": {
+        "blockId": "hype8hvdakfnqg3ka0b368a1",
+        "itemId": "te37h352q2hi1lkp8tgrotlq"
+      },
+      "to": {
+        "groupId": "c8e30ru312yc2w9peiuynxs2"
+      }
+    },
+    {
+      "id": "z8l6r73opmq182bg38wf5a6q",
+      "from": {
+        "blockId": "hype8hvdakfnqg3ka0b368a1",
+        "itemId": "gfu169w2cf44cjgpt3g6xq6h"
+      },
+      "to": {
+        "groupId": "c8e30ru312yc2w9peiuynxs2"
+      }
+    },
+    {
+      "id": "uksjwbvzotkg5lx7txticqub",
+      "from": {
+        "blockId": "hype8hvdakfnqg3ka0b368a1",
+        "itemId": "nulzfp3fb6eb5sgy4lxj02j9"
+      },
+      "to": {
+        "groupId": "c8e30ru312yc2w9peiuynxs2"
+      }
+    },
+    {
+      "id": "tstldjcfyqwly7o6w2pmft31",
+      "from": {
+        "blockId": "ydakpsaioeouk9436r5wcel2"
+      },
+      "to": {
+        "groupId": "pzrn1agmbglblop31qigkw3v"
+      }
+    },
+    {
+      "id": "wlhb6xc6bcyedgfm4n0saqua",
+      "from": {
+        "blockId": "kf806lhe0c1zyv2m839eu0i7",
+        "itemId": "br18rrcibnr3jxiizj83d5c2"
+      },
+      "to": {
+        "groupId": "uhqi5wrynn5bbo0maj2iwqgc"
+      }
+    },
+    {
+      "id": "irluujlf1z6rma43817mejoh",
+      "from": {
+        "blockId": "tv6tsw8wbhn0vrw6iy89cdqy",
+        "itemId": "zr017jc9biroy92zn0jfddze"
+      },
+      "to": {
+        "groupId": "imo494j226cywipggwdddnki"
+      }
+    },
+    {
+      "id": "g67ven32arxrkqybr2c8b11b",
+      "from": {
+        "blockId": "tv6tsw8wbhn0vrw6iy89cdqy"
+      },
+      "to": {
+        "groupId": "tl6q1dpqxib3s75cwwojqrdu"
+      }
+    },
+    {
+      "id": "rshd1zuuo7vrdfruexhchzhy",
+      "from": {
+        "blockId": "y29zo0s7yb9qv0hnpi3w2hgn",
+        "itemId": "hfo17ly2rl6qtexyi2t5vl02"
+      },
+      "to": {
+        "groupId": "bc2mxoo3el3yrlczk397x5to"
+      }
+    },
+    {
+      "id": "qm8r1wiiob213v06rwwxra6x",
+      "from": {
+        "blockId": "y29zo0s7yb9qv0hnpi3w2hgn",
+        "itemId": "zplimnuo9kh4xo3qnf771m4d"
+      },
+      "to": {
+        "groupId": "bc2mxoo3el3yrlczk397x5to"
+      }
+    },
+    {
+      "id": "vij1cxotu8a4yg37zlvxlymz",
+      "from": {
+        "blockId": "y29zo0s7yb9qv0hnpi3w2hgn",
+        "itemId": "s3apv98okssyo4lxesmx98tr"
+      },
+      "to": {
+        "groupId": "bc2mxoo3el3yrlczk397x5to"
+      }
+    },
+    {
+      "id": "tepx8dcfx7qyhjkvir33cfh3",
+      "from": {
+        "blockId": "y29zo0s7yb9qv0hnpi3w2hgn",
+        "itemId": "jjc4m4vi0f00c583xkb6d6xf"
+      },
+      "to": {
+        "groupId": "bc2mxoo3el3yrlczk397x5to"
+      }
+    },
+    {
+      "id": "rsqcs39n0u2vtxtrc0eyrx0r",
+      "from": {
+        "blockId": "x09wdbfvhywa5qyn0u4p60sh",
+        "itemId": "y616vva5r15fb58f3t1eevev"
+      },
+      "to": {
+        "groupId": "s7e0qwf73t58s9t8kj8kkv28"
+      }
+    },
+    {
+      "id": "zlw13df5xsi4n6241l8y46rw",
+      "from": {
+        "blockId": "ywve14lbi8ti7offtl1u70i1",
+        "itemId": "wuo410bi8y1d98b0eakf04db"
+      },
+      "to": {
+        "groupId": "f1ovsub8rq62enmyaxsv8esj"
+      }
+    },
+    {
+      "id": "y8s8glparg7uqbnl09k3ucie",
+      "from": {
+        "blockId": "x09wdbfvhywa5qyn0u4p60sh",
+        "itemId": "owjbpdv759pg84plm1lcjzdw"
+      },
+      "to": {
+        "groupId": "tgokakj0q6vw37ovl1lsp8uc"
+      }
+    },
+    {
+      "id": "nknkryag1utwujyhisbm71mu",
+      "from": {
+        "blockId": "lvhfxqetnw0fqa51jspyz4h8",
+        "itemId": "iitv1vwm1o3bbdimx27vmkqq"
+      },
+      "to": {
+        "groupId": "f1ovsub8rq62enmyaxsv8esj"
+      }
+    },
+    {
+      "id": "kxa0qecdyjvmwckamo1townh",
+      "from": {
+        "blockId": "g3q2wh2f1d93b2qizf3w24fe",
+        "itemId": "qxgg6pgilds8skj45dznaczv"
+      },
+      "to": {
+        "groupId": "m0nuksqlp61s8medwmbnv67r"
+      }
+    },
+    {
+      "id": "ctaswjd2ncoo0kzwnz11o1ty",
+      "from": {
+        "blockId": "g1g5htqn3l0tnzueyve5bzx7",
+        "itemId": "h22mmj6lkueuepxzwwhyp8u2"
+      },
+      "to": {
+        "groupId": "k593k1jthubl4zosoxjjwn5g"
+      }
+    },
+    {
+      "id": "exwlr7wop7dhiqdrqd6aqvph",
+      "from": {
+        "blockId": "brlxa0iv360hha6m4ei6m11e",
+        "itemId": "gx0zexhctlxh9x38m7c0n4yd"
+      },
+      "to": {
+        "groupId": "o5t3cfrqf7kez139tu9udcw3"
+      }
+    },
+    {
+      "id": "x9h1gwno566x0tkdwhhq8cdz",
+      "from": {
+        "blockId": "yg6hz8unkkmvbcs73rgy3zlt",
+        "itemId": "uadhvpw3rphjwt85j8o3b0jq"
+      },
+      "to": {
+        "groupId": "k87cbcyoflh1iwypwszaplkh",
+        "blockId": "e8ta5yn0xplkm067l32azmkq"
+      }
+    },
+    {
+      "id": "ryazb2uivo7yc7huihh98lsc",
+      "from": {
+        "blockId": "yg6hz8unkkmvbcs73rgy3zlt",
+        "itemId": "btkwc876aea2svvurhfwazuj"
+      },
+      "to": {
+        "groupId": "b8n2s6hhys2554a4c7d6447p"
+      }
+    },
+    {
+      "id": "s3w2hpnhdd1qs9o4tg9lpgvi",
+      "from": {
+        "blockId": "yg6hz8unkkmvbcs73rgy3zlt",
+        "itemId": "jr5lorx1ioaes0l7p6i54hmq"
+      },
+      "to": {
+        "groupId": "zl6jlma2ffxcea1mpif30pl2"
+      }
+    },
+    {
+      "id": "hw1orcm2ftm6bk9p83nqhdgi",
+      "from": {
+        "blockId": "g1g5htqn3l0tnzueyve5bzx7",
+        "itemId": "j2nd3x8j3uknlm0lz9gg2s2d"
+      },
+      "to": {
+        "groupId": "vsi4lz28bf5y455t512um1gw"
+      }
+    },
+    {
+      "id": "ny1rxwi7sn0gd85plxlahtmq",
+      "from": {
+        "blockId": "brlxa0iv360hha6m4ei6m11e",
+        "itemId": "bjy1lf0sh5pbv2i83zafixls"
+      },
+      "to": {
+        "groupId": "vsi4lz28bf5y455t512um1gw"
+      }
+    },
+    {
+      "id": "oyodmul0vwn24d1l2ttlpd6y",
+      "from": {
+        "blockId": "g1g5htqn3l0tnzueyve5bzx7",
+        "itemId": "qhh4ul0mw5zr9jkbw48nvsl7"
+      },
+      "to": {
+        "groupId": "p143x0wstbaatp2m65vv8q86"
+      }
+    },
+    {
+      "id": "kv12v3610sq8lew2yrel3dfq",
+      "from": {
+        "blockId": "xg263ltvyk3spznrfpj0fthy",
+        "itemId": "e4osl9uv1fbcxm5tp5z9zpxt"
+      },
+      "to": {
+        "groupId": "lwljreyepju4epyl3us2wtyy"
+      }
+    },
+    {
+      "id": "qbtqgy7brs13scqsww57qjtp",
+      "from": {
+        "blockId": "j5u9rw560pqzn3iog183tnqz",
+        "itemId": "htvpoy8pjhtzd5rkh16j444l"
+      },
+      "to": {
+        "groupId": "lwljreyepju4epyl3us2wtyy"
+      }
+    },
+    {
+      "id": "vgsehn2dkt0akn30cms70j8a",
+      "from": {
+        "blockId": "z3lifgsuy4opj32wb0zb6mum",
+        "itemId": "j8ff4kayzo5yvvqkzeoi7ohi"
+      },
+      "to": {
+        "groupId": "lwljreyepju4epyl3us2wtyy"
+      }
+    },
+    {
+      "id": "b9sxe6poq6tjpww4ysd0z7li",
+      "from": {
+        "blockId": "xlnqg80ostzjlqza9ccisfvr",
+        "itemId": "cw1f1jd80gbwr11m513hr6mo"
+      },
+      "to": {
+        "groupId": "lwljreyepju4epyl3us2wtyy"
+      }
+    },
+    {
+      "id": "hg40cp2qp46lbeurhuggfvlk",
+      "from": {
+        "blockId": "g1g5htqn3l0tnzueyve5bzx7",
+        "itemId": "usctui2modtr5u4z2cg5rjyb"
+      },
+      "to": {
+        "groupId": "dzobie5z5ks7zfl8ew4namdc"
+      }
+    },
+    {
+      "id": "glcspa8wq8updf3b3vs9sooc",
+      "from": {
+        "blockId": "g1g5htqn3l0tnzueyve5bzx7",
+        "itemId": "gbb6k5igutunbuzvh3eehrph"
+      },
+      "to": {
+        "groupId": "dkxonzkt9uc4r9bbcpcuczpv"
+      }
+    },
+    {
+      "id": "y63v3n7h5jf9ynnofa6s6g8c",
+      "from": {
+        "blockId": "g1g5htqn3l0tnzueyve5bzx7",
+        "itemId": "dm98c0p6qs60i34kiesd4dnj"
+      },
+      "to": {
+        "groupId": "h5btdlbc6rdddmzxaz7eg2yq"
+      }
+    }
+  ],
+  "variables": [
+    {
+      "id": "vrz2klfk6gj3uvdu2ixkkmn22",
+      "name": "demoNumber",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vptlnb5zqmu45lfktl4jlyfs4",
+      "name": "demoEmail",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vkovo3nfarm26l6xvlboqotvi",
+      "name": "demoName",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vfbx4r3cxlkw22nluvrypgo6k",
+      "name": "demo_date_time",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vjb4m94i9q27w3p07ps9mifzg",
+      "name": "walkthrough_type",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vi5mze0ojzg7zm1q3bupig7ac",
+      "name": "demo_date",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vxn6arvpvgjlmxecmbhta5oad",
+      "name": "time",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vuwk5bbv7wc6n5reiful5m243",
+      "name": "requirement",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vyoxe0kry9v73fd0awvlayoe5",
+      "name": "QEmail",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vniu52ncv4miht4yu9yl6oa92",
+      "name": "QPhone",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vz3ligynarbyrgix880gjxlfz",
+      "name": "q_phone",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vbqu5leqs2cec8kckva8y93hz",
+      "name": "q_email",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vozjqh8hhzsrcuj905u97qyg3",
+      "name": "q_name",
+      "isSessionVariable": false
+    },
+    {
+      "id": "va5u0b9exrehiehrnwibhf5ng",
+      "name": "marketing_challenges",
+      "isSessionVariable": false
+    },
+    {
+      "id": "vfjdvw0tpq7pb1faymvhc106e",
+      "name": "identification_of_work",
+      "isSessionVariable": false
+    }
+  ],
+  "theme": {},
+  "selectedThemeTemplateId": null,
+  "settings": {},
+  "createdAt": "2025-03-17T04:46:25.748Z",
+  "updatedAt": "2025-03-21T16:13:02.847Z",
+  "icon": null,
+  "folderId": null,
+  "publicId": "real-estate-b-2-b-cx7ciu2",
+  "customDomain": null,
+  "workspaceId": "proWorkspace",
+  "resultsTablePreferences": null,
+  "isArchived": false,
+  "isClosed": false,
+  "whatsAppCredentialsId": null,
+  "riskLevel": null
+}

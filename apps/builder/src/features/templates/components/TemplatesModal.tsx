@@ -129,68 +129,7 @@ export const TemplatesModal = ({
                     </Button>
                   ))}
               </Stack>
-              <Stack spacing={2}>
-                <Text fontSize="xs" fontWeight="medium" pl="1" color="gray.500">
-                  {t("templates.modal.menuHeading.product")}
-                </Text>
-                {templates
-                  .filter((template) => template.category === "product")
-                  .map((template) => (
-                    <Button
-                      size="sm"
-                      key={template.name}
-                      onClick={() => fetchTemplate(template)}
-                      w="full"
-                      variant={
-                        selectedTemplate.name === template.name
-                          ? "solid"
-                          : "ghost"
-                      }
-                      isDisabled={template.isComingSoon}
-                    >
-                      <HStack overflow="hidden" fontSize="sm" w="full">
-                        <Text>{template.emoji}</Text>
-                        <Text>{template.name}</Text>
-                        {template.isNew && (
-                          <Tag colorScheme="orange" size="sm" flexShrink={0}>
-                            {t("templates.modal.menuHeading.new.tag")}
-                          </Tag>
-                        )}
-                      </HStack>
-                    </Button>
-                  ))}
-              </Stack>
-              <Stack spacing={2}>
-                <Text fontSize="xs" fontWeight="medium" pl="1" color="gray.500">
-                  {t("templates.modal.menuHeading.other")}
-                </Text>
-                {templates
-                  .filter((template) => template.category === undefined)
-                  .map((template) => (
-                    <Button
-                      size="sm"
-                      key={template.name}
-                      onClick={() => fetchTemplate(template)}
-                      w="full"
-                      variant={
-                        selectedTemplate.name === template.name
-                          ? "solid"
-                          : "ghost"
-                      }
-                      isDisabled={template.isComingSoon}
-                    >
-                      <HStack overflow="hidden" fontSize="sm" w="full">
-                        <Text>{template.emoji}</Text>
-                        <Text>{template.name}</Text>
-                        {template.isNew && (
-                          <Tag colorScheme="orange" size="sm" flexShrink={0}>
-                            {t("templates.modal.menuHeading.new.tag")}
-                          </Tag>
-                        )}
-                      </HStack>
-                    </Button>
-                  ))}
-              </Stack>
+              
             </Stack>
           </Stack>
           <Stack
