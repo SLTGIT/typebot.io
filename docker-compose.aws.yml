@@ -1,0 +1,92 @@
+version: '3.9'
+
+x-typebot-common: &typebot-common
+  restart: always
+  depends_on:
+    typebot-redis:
+      condition: service_healthy
+  networks:
+    - typebot-network
+  env_file: .env
+  environment:
+    REDIS_URL: redis://typebot-redis:6379
+
+services:
+  caddy:
+    container_name: caddy
+    image: wemakeservices/caddy-gen:latest
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./caddy-certificates:/data/caddy
+    ports:
+      - '80:80'
+      - '443:443'
+    networks:
+      - typebot-network
+    depends_on:
+      - typebot-builder
+      - typebot-viewer
+
+  typebot-redis:
+    image: redis:alpine
+    restart: always
+    command: --save 60 1 --loglevel warning
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli ping | grep PONG"]
+      start_period: 20s
+      interval: 30s
+      retries: 5
+      timeout: 3s
+    volumes:
+      - redis-data:/data
+    networks:
+      - typebot-network
+
+  typebot-builder:
+    <<: *typebot-common
+    build:
+      context: .
+      args:
+        - SCOPE=builder
+    labels:
+      virtual.host: 'chatbot.easyagentpro.com'
+      virtual.port: '3000'
+      virtual.tls-email: 'admin@easyagentpro.com'
+    networks:
+      - typebot-network
+    deploy:
+      resources:
+        limits:
+          memory: 6g
+        reservations:
+          memory: 3g
+
+  typebot-viewer:
+    <<: *typebot-common
+    build:
+      context: .
+      args:
+        - SCOPE=viewer
+    labels:
+      virtual.host: 'bot.easyagentpro.com'
+      virtual.port: '3000'
+      virtual.tls-email: 'admin@easyagentpro.com'
+      virtual.proxy.directives: |
+        flush_interval -1
+    networks:
+      - typebot-network
+    deploy:
+      resources:
+        limits:
+          memory: 6g
+        reservations:
+          memory: 3g
+
+networks:
+  typebot-network:
+    driver: bridge
+
+volumes:
+  redis-data:
+  caddy-certificates:
