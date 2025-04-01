@@ -11,8 +11,7 @@ export const useTemplates = (): TemplateProps[] => {
       fileName: "eap-b2b.json",
       isNew: true,
       category: "marketing",
-      description:
-        "real state bot",
+      description: "real state bot",
     },
     {
       name: "EAP B2C Leadgen Template",
@@ -20,8 +19,7 @@ export const useTemplates = (): TemplateProps[] => {
       fileName: "eap-b2c.json",
       isNew: true,
       category: "marketing",
-      description:
-        "real state bot",
+      description: "real state bot",
     }
   ];
 };
