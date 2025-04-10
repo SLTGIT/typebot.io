@@ -19,22 +19,5 @@ export const CreateFolderButton = ({ isLoading, onClick }: Props) => {
     if (isFreePlan(workspace)) return onOpen();
     onClick();
   };
-  return (
-    <Button
-      leftIcon={<FolderPlusIcon color="blue.500" />}
-      onClick={handleClick}
-      isLoading={isLoading}
-      colorScheme="white"
-    >
-      <HStack>
-        <Text>{t("folders.createFolderButton.label")}</Text>
-        {isFreePlan(workspace) && <LockTag plan={Plan.STARTER} />}
-      </HStack>
-      <ChangePlanModal
-        isOpen={isOpen}
-        onClose={onClose}
-        type={t("billing.limitMessage.folder")}
-      />
-    </Button>
-  );
+  return <></>;
 };

@@ -98,56 +98,6 @@ export const ChangePlanForm = ({
     );
 
   return (
-    <Stack spacing={6}>
-      <HStack maxW="500px">
-        <StripeClimateLogo />
-        <Text fontSize="xs" color="gray.500">
-          {t("billing.contribution.preLink")}{" "}
-          <TextLink href="https://climate.stripe.com/5VCRAq" isExternal>
-            {t("billing.contribution.link")}
-          </TextLink>
-        </Text>
-      </HStack>
-      {!workspace.stripeId && (
-        <ParentModalProvider>
-          <PreCheckoutModal
-            selectedSubscription={preCheckoutPlan}
-            existingEmail={user?.email ?? undefined}
-            existingCompany={user?.company ?? undefined}
-            onClose={() => setPreCheckoutPlan(undefined)}
-          />
-        </ParentModalProvider>
-      )}
-      {data && (
-        <Stack align="flex-end" spacing={6}>
-          <HStack alignItems="stretch" spacing="4" w="full">
-            {excludedPlans?.includes("STARTER") ? null : (
-              <StarterPlanPricingCard
-                currentPlan={workspace.plan}
-                onPayClick={() => handlePayClick(Plan.STARTER)}
-                isLoading={isUpdatingSubscription}
-                currency={data.subscription?.currency}
-              />
-            )}
-
-            {excludedPlans?.includes("PRO") ? null : (
-              <ProPlanPricingCard
-                currentPlan={workspace.plan}
-                onPayClick={() => handlePayClick(Plan.PRO)}
-                isLoading={isUpdatingSubscription}
-                currency={data.subscription?.currency}
-              />
-            )}
-          </HStack>
-        </Stack>
-      )}
-
-      <Text color="gray.500">
-        {t("billing.customLimit.preLink")}{" "}
-        <TextLink href={"https://typebot.io/enterprise-lead-form"} isExternal>
-          {t("billing.customLimit.link")}
-        </TextLink>
-      </Text>
-    </Stack>
+    <></>
   );
 };
